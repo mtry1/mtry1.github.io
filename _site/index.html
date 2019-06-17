@@ -35,7 +35,7 @@
 	    
 	  
 	    
-	      <a href="/about" title="About Monochrome">About Monochrome</a>
+	      <a href="/about" title="About me">About me</a>
 	    
 	  
 	    
@@ -52,8 +52,8 @@
 	  
     
     <!-- Nav links -->
-	  <a href="https://github.com/thereviewindex/monochrome/archive/master.zip">Download</a>
-<a href="https://github.com/thereviewindex/monochrome">Project on Github</a>
+	  <!-- <a href="https://github.com/thereviewindex/monochrome/archive/master.zip">Download</a> -->
+<!-- <a href="https://github.com/thereviewindex/monochrome">Project on Github</a> -->
 
 
 	</div>
@@ -82,7 +82,7 @@
     <span class="f-left">  
       <a href="/">
         <h1>
-          <span>mono</span>chrome
+          </span>Home
         </h1>
       </a>
     </span>
@@ -92,7 +92,7 @@
 	      
 	    
 	      
-	        <a href="/about" title="About Monochrome">About Monochrome</a>
+	        <a href="/about" title="About me">About me</a>
 	      
 	    
 	      
@@ -109,8 +109,8 @@
 	    
       
       <!-- Nav links -->
-	    <a href="https://github.com/thereviewindex/monochrome/archive/master.zip">Download</a>
-<a href="https://github.com/thereviewindex/monochrome">Project on Github</a>
+	    <!-- <a href="https://github.com/thereviewindex/monochrome/archive/master.zip">Download</a> -->
+<!-- <a href="https://github.com/thereviewindex/monochrome">Project on Github</a> -->
 
 
     </span>
@@ -131,6 +131,14 @@
 <ul id="posts">
 
 	
+
+	  <li class="post">
+	  	<h2><a href="/%E5%BC%82%E5%B8%B8%E6%8D%95%E8%8E%B7%E5%92%8C%E5%88%86%E6%9E%90">异常捕获和分析</a></h2>
+      <time datetime="2019-06-17T00:00:00+08:00" class="by-line"> <i>17 Jun 2019</i> </time>
+	  	<p>主要内容 闪退捕获 日志分析 闪退捕获 内核级异常：Mach异常-&gt;Unit信号（Mach层捕获到异常通过发送信号到Unit层） 应用层异常：NSException 本文实现方式：捕获Unit信号和捕获NSException（强烈建议先看下漫谈iOS Crash收集框架） 为什么要分两类 在没有设置捕获NSException时，因为某个NSException导致异常时，Mach异常或Unit信号也是可以捕获到的只是有些不完成。 捕获Unit信号获取的异常 reason:Signal SIGABRT was raise callStackSymbols: 0 MTCrashCaughtDemo 0x00000001000c321c signalExceptionHandler + 196 1 libsystem_platform.dylib 0x0000000183a2193c _sigtramp + 52 2 libsystem_pthread.dylib 0x0000000183a28ef8 pthread_kill + 112 3 libsystem_c.dylib 0x00000001838cddc8 abort + 140 4 libc++abi.dylib 0x00000001834013f4 __cxa_bad_cast + 0 5 libc++abi.dylib 0x000000018341de98 &lt;redacted&gt;...</p>
+	  </li>
+
+    
 
 	  <li class="post">
 	  	<h2><a href="/thereviewindex-introduction">TheReviewIndex | Unbiased User Review Summaries</a></h2>
@@ -196,6 +204,14 @@
 
     
 
+	  <li class="post">
+	  	<h2><a href="/test-post-3">Test Post 3</a></h2>
+      <time datetime="2017-02-11T00:00:00+08:00" class="by-line"> <i>11 Feb 2017</i> </time>
+	  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate est optio ut impedit architecto iusto tempore rem, voluptates sed magni nisi corrupti praesentium voluptatum harum expedita temporibus ipsam, odit ad distinctio! Labore cupiditate distinctio facere earum, iste! Reiciendis possimus voluptatum explicabo corporis ab. Ex adipisci laudantium mollitia vel optio deserunt...</p>
+	  </li>
+
+    
+
 </ul>
 
 
@@ -227,7 +243,7 @@
 	  </div>
 	    
 	    <!-- Footer -->
-	    <footer><span>@2017 - Monochrome</span></footer>
+	    <footer><span>@2019 - mtry</span></footer>
 
 
 	    <!-- Script -->
