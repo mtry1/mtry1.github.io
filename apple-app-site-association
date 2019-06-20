@@ -1,0 +1,25 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "com.mtry.NetEaseOA",
+                "paths": [
+                    "/sapp/*"
+                ]
+            },
+            {
+                "appID": "com.netease.oa2",
+                "paths": [
+                    "/sapp/*"
+                ]
+            },
+            {
+                "appID": "com.chuan.oa",
+                "paths": [
+                    "/sapp/*"
+                ]
+            }
+        ]
+    }
+}
