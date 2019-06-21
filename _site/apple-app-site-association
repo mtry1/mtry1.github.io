@@ -5,6 +5,10 @@
             {
                 "appID": "ZV5SVKKPDA.com.mtry.NetEaseOA",
                 "paths": ["/sapp/*"]
+            },
+            {
+                "appID": "47237LH7N7.com.mtry.NetEaseOA",
+                "paths": ["/sapp/*"]
             }
         ]
     }
