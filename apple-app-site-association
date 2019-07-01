@@ -9,6 +9,10 @@
             {
                 "appID": "Y3428KKGU8.com.chuan.oa2",
                 "paths": ["/sapp/*"]
+            },
+            {
+                "appID": "ZV5SVKKPDA.com.mtry.NetEaseOA",
+                "paths": ["/sapp/*"]
             }
         ]
     }
