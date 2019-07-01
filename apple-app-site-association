@@ -5,6 +5,10 @@
             {
                 "appID": "L63EW79PNY.com.netease.oa2",
                 "paths": ["/sapp/*"]
+            },
+            {
+                "appID": "Y3428KKGU8.com.chuan.oa2",
+                "paths": ["/sapp/*"]
             }
         ]
     }
