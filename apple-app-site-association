@@ -13,6 +13,10 @@
             {
                 "appID": "ZV5SVKKPDA.com.mtry.NetEaseOA",
                 "paths": ["/sapp/*"]
+            },
+            {
+                "appID": "ZV5SVKKPDA.com.mtry.UniversalLink",
+                "paths": ["*"]
             }
         ]
     }
