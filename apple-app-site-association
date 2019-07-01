@@ -16,7 +16,7 @@
             },
             {
                 "appID": "ZV5SVKKPDA.com.mtry.UniversalLink",
-                "paths": ["*"]
+                "paths": ["/test/*"]
             }
         ]
     }
