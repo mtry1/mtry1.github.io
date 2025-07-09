@@ -1,3 +1,14 @@
 /*- Custom style -*/
+.post-interactions {
+  margin: 1em 0;
+  button {
+    margin-right: 0.5em;
+  }
+  span {
+    margin-right: 1em;
+  }
+}
 
-// -- Put custom style under this point -- //
+.comments {
+  margin-top: 2em;
+}
