@@ -129,3 +129,8 @@ To maintain the vertical rhythm, it has been applied a **Typographic scale** as 
 
 ## License
 Released under [MIT License](license.md).
+
+## Comments
+
+博客评论使用 [Utterances](https://utteranc.es/) 存储在 GitHub Issues 中。
+若页面提示需要安装应用，请到仓库设置中安装 Utterances GitHub App。

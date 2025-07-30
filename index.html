@@ -1,17 +1,33 @@
----
-layout: default
----
-<!-- Posts -->
-<ul id="posts">
-
-	{% for post in paginator.posts %}
-
-	  <li class="post">
-	  	<h2><a href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">{%if post.header %}{{ post.header }}{% else %}{{ post.title }}{% endif %}</a></h2>
-      <time datetime="{{ post.date | date_to_xmlschema }}" class="by-line"> <i>{{ post.date | date_to_string }}</i> </time>
-	  	<p>{{ post.content | strip_html | truncatewords:50 }}</p>
-	  </li>
-
-    {% endfor %}
-
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Chat</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <a href="/blog/">旧博客入口</a>
+  </nav>
+  <main id="chat-container">
+    <div id="messages" class="messages"></div>
+    <form id="chat-form">
+      <input type="text" id="chat-input" placeholder="说点什么..." autocomplete="off" required>
+      <button type="submit">发送</button>
+    </form>
+    <details id="settings">
+      <summary>设置</summary>
+      <label>API Key: <input type="text" id="api-key" placeholder="可选"></label>
+      <label>模型:
+        <select id="model">
+          <option value="openai/gpt-3.5-turbo">gpt-3.5-turbo</option>
+          <option value="openai/gpt-4-turbo">gpt-4-turbo</option>
+        </select>
+      </label>
+      <label>温度: <input type="number" id="temperature" value="1" min="0" max="2" step="0.1"></label>
+    </details>
+  </main>
+  <script src="chat.js"></script>
+</body>
+</html>
