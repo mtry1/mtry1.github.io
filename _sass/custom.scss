@@ -1,4 +1,13 @@
 /*- Custom style -*/
+.post-interactions {
+  margin: 1em 0;
+  button {
+    margin-right: 0.5em;
+  }
+  span {
+    margin-right: 1em;
+  }
+}
 
 .post-interactions {
   margin: 1em 0;
@@ -18,3 +27,4 @@
   font-size: 0.9em;
   color: #555;
 }
+
