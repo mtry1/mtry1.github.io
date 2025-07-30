@@ -39,3 +39,65 @@ function menuClick() {
 }
 
 menuClick();
+
+document.addEventListener('DOMContentLoaded', function() {
+    var path = location.pathname.replace(/\//g, '_');
+    var base = 'https://api.countapi.xyz';
+
+    // Views
+    fetch(base + '/hit/mtry1-github-io/views' + path)
+        .then(function(res) { return res.json(); })
+        .then(function(data) {
+            var viewSpan = document.getElementById('view-count');
+            if (viewSpan) {
+                viewSpan.textContent = data.value;
+            }
+        });
+
+    // Likes
+    var likeCount = document.getElementById('like-count');
+    fetch(base + '/get/mtry1-github-io/likes' + path)
+        .then(function(res) { return res.json(); })
+        .then(function(data) {
+            if (likeCount) {
+                likeCount.textContent = data.value || 0;
+            }
+        });
+
+    var likeBtn = document.getElementById('like-btn');
+    if (likeBtn) {
+        likeBtn.addEventListener('click', function() {
+            fetch(base + '/hit/mtry1-github-io/likes' + path)
+                .then(function(res) { return res.json(); })
+                .then(function(data) {
+                    if (likeCount) {
+                        likeCount.textContent = data.value;
+                    }
+                });
+        });
+    }
+
+    // Dislikes
+    var dislikeCount = document.getElementById('dislike-count');
+    fetch(base + '/get/mtry1-github-io/dislikes' + path)
+        .then(function(res) { return res.json(); })
+        .then(function(data) {
+            if (dislikeCount) {
+                dislikeCount.textContent = data.value || 0;
+            }
+        });
+
+    var dislikeBtn = document.getElementById('dislike-btn');
+    if (dislikeBtn) {
+        dislikeBtn.addEventListener('click', function() {
+            fetch(base + '/hit/mtry1-github-io/dislikes' + path)
+                .then(function(res) { return res.json(); })
+                .then(function(data) {
+                    if (dislikeCount) {
+                        dislikeCount.textContent = data.value;
+                    }
+                });
+        });
+    }
+});
+

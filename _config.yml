@@ -13,7 +13,7 @@ source: .
 destination: ./_site
 permalink: /:title
 paginate: 10
-paginate_path: /page:num/
+paginate_path: /blog/page:num/
 
 # Default values
 defaults:

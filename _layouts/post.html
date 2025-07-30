@@ -3,11 +3,26 @@ layout: default
 ---
 <article id="post-page">
 	<h2>{%if page.header %}{{ page.header }}{% else %}{{ page.title }}{% endif %}</h2>		
-	<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date_to_string }}</time>
-	<div class="content">
+        <time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date_to_string }}</time>
+        <div class="post-interactions">
+                阅读数: <span id="view-count">0</span>
+                <button id="like-btn">👍 <span id="like-count">0</span></button>
+                <button id="dislike-btn">👎 <span id="dislike-count">0</span></button>
+        </div>
+        <div class="content">
 
-		{{ content }}
-		
-	</div>
+                {{ content }}
+
+        </div>
+        <div id="comments" class="comments"></div>
+        <p class="comment-note">如评论框未显示，请在仓库中安装 Utterances 应用</p>
+        <script src="https://utteranc.es/client.js"
+                repo="mtry1/mtry1.github.io"
+                issue-term="pathname"
+                label="comment"
+                theme="github-light"
+                crossorigin="anonymous"
+                async>
+        </script>
 </article>
 
